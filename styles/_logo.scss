@@ -1,0 +1,13 @@
+.logo {
+  width: rem(121px);
+  height: rem(38px);
+  background: url("../images/logo.svg") center /contain no-repeat;
+  /*@media (max-width: 768px) {
+    width: rem(160px);
+    height: rem(48px);
+  }*/
+  @media (max-width: 576px) {
+    width: rem(83px);
+    height: rem(26px);
+  }
+}

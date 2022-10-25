@@ -1,0 +1,131 @@
+.news-list {
+  padding-bottom: rem(86px);
+  position: relative;
+
+  @media (max-width: 576px) {
+    padding-bottom: rem(50px);
+  }
+
+  &--pb-none {
+    padding-bottom: 0;
+  }
+
+  &--pb {
+    padding-bottom: rem(99px);
+    @media (max-width: 576px) {
+      padding-bottom: rem(82px);
+    }
+  }
+
+  &--pt {
+    padding-top: rem(38px);
+    @media (max-width: 576px) {
+      padding-top: rem(31px);
+    }
+  }
+
+  &__tab {
+    margin-bottom: rem(57px);
+    @media (max-width: 992px) {
+      margin-bottom: rem(50px);
+    }
+    @media (max-width: 768px) {
+      margin-bottom: rem(44px);
+    }
+    @media (max-width: 576px) {
+      margin-bottom: rem(30px);
+    }
+  }
+
+  &__button {
+    margin: rem(67px) auto 0 auto;
+
+    @media (max-width: 576px) {
+      margin: rem(69px) auto 0 auto;
+    }
+  }
+
+  &__top {
+    display: flex;
+    align-items: flex-end;
+    justify-content: space-between;
+    margin-bottom: rem(54px);
+    @media (max-width: 1200px) {
+      display: block;
+    }
+    @media (max-width: 768px) {
+      margin-bottom: rem(40px);
+    }
+    @media (max-width: 576px) {
+      margin-bottom: rem(30px);
+    }
+  }
+
+  &__title {
+    margin-bottom: 39px;
+    @media (max-width: 576px) {
+      margin-bottom: rem(16px);
+    }
+  }
+
+  &__info {
+    margin-right: rem(104px);
+    @media (max-width: 1200px) {
+      margin: 0 0 rem(30px) 0;
+    }
+    @media (max-width: 576px) {
+      margin-bottom: rem(16px);
+    }
+  }
+
+  &--grey {
+    padding-top: rem(54px);
+    padding-bottom: rem(64px);
+    background: rgba(29, 29, 51, 0.5);
+    @media (max-width: 576px) {
+      padding-top: rem(30px);
+    }
+  }
+
+  &__tabs {
+    margin-bottom: 50px;
+    @media (max-width: 768px) {
+      width: 60rem;
+    }
+    @media (max-width: 576px) {
+      width: 50rem;
+    }
+  }
+
+  &__filters {
+    margin-bottom: rem(44px);
+    @media (max-width: 768px) {
+      font-size: rem(34px);
+    }
+    @media (max-width: 576px) {
+      margin-bottom: rem(26px);
+    }
+  }
+
+  &__label {
+    margin-bottom: 18px;
+    @media (max-width: 576px) {
+      margin-bottom: rem(15px);
+    }
+  }
+
+  &__lightning {
+    position: absolute;
+    right: 0;
+    top: -194px;
+    width: 279px;
+    pointer-events: none;
+    @media (max-width: 992px) {
+      display: none;
+    }
+  }
+
+  &__name {
+    margin-bottom: rem(35px) !important;
+  }
+}

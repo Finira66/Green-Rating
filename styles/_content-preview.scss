@@ -1,0 +1,88 @@
+.content-preview {
+  padding: 0 0 rem(74px) 0;
+  overflow: hidden;
+  @media (max-width: 576px) {
+    padding: 0 0 rem(66px) 0;
+  }
+  &__poster {
+    padding: rem(81px) rem(69px) rem(90px) rem(69px);
+    border-radius: 0;
+    margin: 0 rem(-69px);
+    width: calc(100% + 138px);
+    background: url('../images/main.png') center /cover no-repeat;
+    @media (max-width: 1200px) {
+      padding: rem(80px) rem(70px) rem(70px) rem(70px);
+    }
+    @media (max-width: 992px) {
+      padding: rem(80px) rem(70px) rem(60px) rem(70px);
+    }
+    @media (max-width: 768px) {
+      padding: rem(80px) rem(70px) rem(57px) rem(70px);
+    }
+    @media (max-width: 576px) {
+      padding: rem(35px) 15px rem(57px) 15px;
+      margin: 0 rem(-15px);
+      width: calc(100% + 30px);
+      background: url('../images/main-mob.png') center /cover no-repeat;
+    }
+  }
+  &__title {
+    font-weight: 700;
+    font-size: rem(58px);
+    line-height: 118%;
+    margin-bottom: rem(37px);
+    color: $white;
+    max-width: rem(667px);
+    @media (max-width: 1200px) {
+      margin-bottom: rem(30px);
+    }
+    @media (max-width: 992px) {
+      font-size: rem(50px);
+      margin-bottom: rem(20px);
+    }
+    @media (max-width: 768px) {
+      font-size: rem(40px);
+      margin-bottom: rem(20px);
+    }
+    @media (max-width: 576px) {
+      font-size: rem(35px);
+      margin-bottom: rem(20px);
+    }
+  }
+  &__text {
+    font-size: rem(21px);
+    line-height: 150%;
+    color: $white;
+    max-width: rem(460px);
+    //margin-bottom: rem(64px);
+    font-weight: 500;
+    @media (max-width: 992px) {
+      //margin-bottom: rem(40px);
+      font-size: rem(18px);
+    }
+    @media (max-width: 768px) {
+      font-size: rem(16px);
+      //margin-bottom: rem(30px);
+    }
+    @media (max-width: 576px) {
+      font-size: rem(14px);
+      line-height: 171%;
+      //margin-bottom: rem(85px);
+      max-width: rem(160px);
+    }
+  }
+  &__buttons {
+    display: flex;
+    align-items: center;
+  }
+  &__button {
+    min-width: rem(226px);
+    margin-right: rem(18px);
+    @media (max-width: 576px) {
+      //min-width: 100%;
+      min-width: auto;
+      width: 100%;
+      margin: 0 rem(15px) 0 0;
+    }
+  }
+}

@@ -1,0 +1,41 @@
+.author {
+  display: flex;
+  align-items: center;
+  &__img {
+    margin-right: rem(12px);
+    width: rem(33px);
+    height: rem(33px);
+    object-fit: cover;
+    border-radius: 50%;
+    flex-shrink: 0;
+    &--mr-none {
+      margin-right: 0;
+    }
+    &--sm {
+      width: rem(27px);
+      height: rem(27px);
+      margin-right: rem(9px);
+    }
+    &--md {
+      width: rem(39px);
+      height: rem(39px);
+    }
+  }
+  &__name {
+    font-family: 'Roboto', sans-serif;
+    font-size: rem(12px);
+    color: $white;
+    &--black {
+      color: $black;
+    }
+    &--grey {
+      font-family: "Roboto", sans-serif;
+      color: rgba($white, 0.54);
+    }
+    &--hide {
+      @media (max-width: 1200px) {
+        display: none;
+      }
+    }
+  }
+}

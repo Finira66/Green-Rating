@@ -1,0 +1,22 @@
+.index {
+  &__news {
+    border-bottom: 0;
+    padding-top: rem(54px);
+    @media (max-width: 992px) {
+      padding-bottom: rem(60px);
+    }
+    @media (max-width: 768px) {
+      padding-bottom: 0;
+    }
+    @media (max-width: 576px) {
+      padding-top: rem(46px);
+      padding-bottom: rem(52px);
+    }
+  }
+  &__nft {
+    margin-bottom: rem(102px);
+    @media (max-width: 768px) {
+      margin-bottom: 0;
+    }
+  }
+}

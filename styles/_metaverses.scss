@@ -1,0 +1,51 @@
+.metaverses {
+  padding-bottom: rem(74px);
+  @media (max-width: 576px) {
+    padding-bottom: rem(38px);
+  }
+  &__overhead {
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+    margin-bottom: rem(19px);
+    @media (max-width: 576px) {
+      margin-bottom: rem(42px);
+    }
+  }
+  &__button {
+    margin: rem(44px) auto 0 auto;
+    @media (max-width: 768px) {
+      margin: rem(38px) auto 0 auto;
+    }
+    @media (max-width: 576px) {
+      margin: rem(30px) auto 0 auto;
+    }
+  }
+  &__label {
+    font-size: rem(12px);
+    line-height: 133.5%;
+    color: $white;
+    &--light {
+      color: rgba($white, 0.7)
+    }
+  }
+  &__row {
+    display: flex;
+    align-items: center;
+  }
+  &__input {
+    padding: rem(5px) rem(3px) rem(4px) rem(3px);
+    font-size: rem(11px);
+    color: rgba($white, 0.7);
+    font-weight: 500;
+    min-height: rem(24px);
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    background: rgba(69, 60, 86, 0.4);
+    border-radius: rem(4px);
+    margin-left: rem(12px);
+    width: rem(39px);
+    text-align: center;
+  }
+}

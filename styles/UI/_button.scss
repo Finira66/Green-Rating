@@ -1,0 +1,104 @@
+.button {
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  padding: 0 rem(19px);
+  min-height: rem(39px);
+  background: linear-gradient(70.81deg, #00BF86 0%, #00AB78 104.67%), linear-gradient(147.6deg, #FF2F93 -1.06%, #AF10FA 159.82%), #FFFFFF;
+  border-radius: 6px;
+  font-size: rem(13px);
+  line-height: rem(13px);
+  color: #fff;
+  font-weight: 500;
+  transition: .2s linear;
+  @media (max-width: 576px) {
+    min-height: rem(29px);
+    font-size: rem(11px);
+    padding: 0 rem(13px);
+  }
+  &--mr {
+    margin-right: rem(53px);
+    @media (max-width: 768px) {
+      margin-right: rem(24px);
+    }
+    @media (max-width: 576px) {
+      margin-right: rem(15px);
+    }
+  }
+  &--black {
+    color: $white;
+    border: 1.4px solid rgba(255, 255, 255, 0.53);
+    border-radius: rem(4px);
+    padding: 0 rem(12px);
+    min-height: rem(40px);
+    background: transparent;
+    max-width: rem(189px);
+  }
+  &--dark {
+    background: #111314;
+    border-radius: rem(5px);
+    color: #fff;
+  }
+  &--blue {
+    background: #00B9EC;
+    color: #fff;
+    border-radius: rem(5px);
+    &:hover {
+      background: #02b1e1;
+    }
+  }
+  &--md-size {
+    max-width: rem(224.55px);
+    min-height: rem(46px);
+    border-radius: rem(8px);
+    font-family: "Roboto", sans-serif;
+  }
+  &--grey {
+    border: 1px solid #CFD6E4;
+    border-radius: rem(8px);
+    background: transparent;
+    color: #000000;
+    font-family: "Arial", sans-serif;
+    padding: rem(6px) rem(11px);
+    line-height: rem(18px);
+    font-size: rem(12px);
+    font-weight: 400;
+    min-height: initial;
+    margin-left: auto;
+  }
+  &__icon {
+    margin-right: rem(8px);
+  }
+  &--rounded {
+    border-radius: 40px;
+  }
+}
+
+.button-medium {
+  border: 2px solid #FFFFFF;
+  text-align: center;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  padding: 0 rem(30px);
+  font-weight: 600;
+  font-size: rem(15px);
+  line-height: 133.5%;
+  color: $white;
+  border-radius: rem(5px);
+  min-height: rem(62px);
+  min-width: rem(153px);
+  &--blue {
+    background: linear-gradient(87.18deg, #00EEA7 0%, #00B57F 97.69%), #C4C4C4;
+    border: none;
+  }
+  @media (max-width: 768px) {
+    font-size: rem(14px);
+    min-height: rem(55px);
+  }
+  @media (max-width: 576px) {
+    font-size: rem(13px);
+    min-height: rem(50px);
+    min-width: 126px;
+  }
+}

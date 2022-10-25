@@ -1,0 +1,90 @@
+.progress
+{
+  position: relative;
+  overflow: hidden;
+}
+
+.progress progress
+{
+  position: absolute;
+  width: 0;
+  height: 0;
+  overflow: hidden;
+  left: -777px;
+}
+
+.progress-bar
+{
+  overflow: hidden;
+  background: #ac92ec;
+  width: 0;
+  height: 100%;
+  position: absolute;
+  top: 0;
+  left: 0;
+}
+
+.progress-value
+{
+  color: #333;
+  display: block;
+  line-height: 21px;
+  text-align: center;
+}
+
+.progress-bg
+{
+  background: rgba(#27CAF7, 0.2);
+  position: relative;
+  height: 3px;
+  border-radius: 41px;
+  overflow: hidden;
+}
+
+.progress-bar:after
+{
+  background: #27CAF7;
+  position: absolute;
+  content: '';
+  top: 0;
+  left: 0;
+  width: 100%;
+  height: 100%;
+}
+
+.progress progress[value="1"] ~ .progress-bg .progress-bar
+{
+  width: 1%;
+}
+
+@for $i from 0 through 100 {
+  .progress progress[value="#{$i}"]
+  {
+    & + .progress-value:before { content : '#{$i}%' }
+    & ~ .progress-bg .progress-bar { width: $i * 1% }
+  }
+}
+
+.progress--arrow {
+  overflow: initial;
+  .progress-bg {
+    overflow: initial;
+    height: rem(6px);
+    background: #EFF2F5;
+    border-radius: rem(4px);
+  }
+  .progress-bar {
+    overflow: initial;
+    background: #00B9EC;
+    &::before {
+      content: '';
+      width: rem(10px);
+      height: rem(8px);
+      position: absolute;
+      bottom: rem(-10px);
+      right: rem(-5px);
+      background: url("../../images/icons/arrow-blue-top.png");
+      z-index: 5;
+    }
+  }
+}

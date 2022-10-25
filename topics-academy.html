@@ -1,0 +1,648 @@
+<!doctype html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport"
+          content="width=device-width, user-scalable=no, initial-scale=1.0, maximum-scale=1.0, minimum-scale=1.0">
+    <meta http-equiv="X-UA-Compatible" content="ie=edge">
+    <title>Blog</title>
+    <link href="https://cdn.jsdelivr.net/npm/select2@4.1.0-rc.0/dist/css/select2.min.css" rel="stylesheet"/>
+    <link rel="stylesheet"
+          href="https://cdnjs.cloudflare.com/ajax/libs/ion-rangeslider/2.3.1/css/ion.rangeSlider.min.css"/>
+    <link rel="stylesheet" href="./styles/main.css">
+</head>
+<body class="bg-dark">
+<header class="header">
+    <div class="container">
+        <div class="header__inner">
+            <a href="#" class="logo header__logo"></a>
+            <div class="header__wrapper">
+                <nav class="nav header__nav">
+                    <a href="#" class="nav__link active">Dashboard</a>
+                    <a href="#" class="nav__link">blog</a>
+                    <a href="#" class="nav__link">news</a>
+                    <!--                    <a href="#" class="nav__link">NFT (Future)</a>-->
+                </nav>
+                <!--                <div class="header__box">-->
+                <!--                    <div class="lang-select header__lang-select">-->
+                <!--                        <select class="js-select-lang">-->
+                <!--                            <option>EN</option>-->
+                <!--                            <option>RU</option>-->
+                <!--                        </select>-->
+                <!--                    </div>-->
+
+                <!--                    <a href="#" class="header__user">-->
+                <!--                        <img src="./images/icons/user.svg" alt="icon">-->
+                <!--                    </a>-->
+                <!--                </div>-->
+                <button class="header__menu-btn">
+                    <img src="./images/icons/menu.svg" alt="menu" class="header__menu-icon menu">
+                    <img src="./images/icons/close.svg" alt="close" class="header__menu-icon close">
+                </button>
+            </div>
+        </div>
+    </div>
+</header>
+
+<div class="menu-mob">
+    <!-- <a href="#" class="menu-mob__auth">
+         <span class="menu-mob__label">Log in</span>
+         <img src="./images/icons/user.svg" alt="icon" class="menu-mob__user-icon">
+     </a>-->
+    <div class="menu-mob__list">
+        <a href="#" class="menu-mob__link active">Dashboard</a>
+        <a href="#" class="menu-mob__link">blog</a>
+        <a href="#" class="menu-mob__link">news</a>
+        <!--        <a href="#" class="menu-mob__link">NFT (Future)</a>-->
+    </div>
+    <!--  <div class="lang-select menu-mob__lang-select">
+          <select class="js-select-lang">
+              <option>EN</option>
+              <option>RU</option>
+          </select>
+      </div>-->
+</div>
+
+<div class="wrapper">
+    <div class="news-list news-list--pt news-list--pb">
+
+        <div class="container">
+
+            <div class="overhead">
+                <div class="label">Topics at Academy</div>
+            </div>
+
+            <div class="filters news-list__filters">
+                <div class="filters__inner">
+                    <div class="filters__box">
+                        <div class="name name--mb-sm name--mob-hidden">Topics</div>
+
+                        <div class="filters__wrapper-topics">
+                            <div class="filters__topics">
+                                <a href="#" class=" filters__topic">
+                                    Quick start +
+                                </a>
+                                <a href="#" class=" filters__topic">
+                                    Launches +
+                                </a>
+                                <a href="#" class=" filters__topic">
+                                    Create +
+                                </a>
+                                <a href="#" class=" filters__topic">
+                                    Explore +
+                                </a>
+                                <a href="#" class=" filters__topic">
+                                    Tech intro +
+                                </a>
+                                <a href="#" class=" filters__topic">
+                                    New +
+                                </a>
+                            </div>
+                        </div>
+
+                    </div>
+                    <div class="filters__box">
+                        <div class="name name--mb-sm name--mob-hidden">Difficulty</div>
+                        <div class="filters__wrapper">
+                            <div class="filters__row">
+                                <div class="level-filter filters__level">
+                                    <input type="checkbox" class="level-filter__input" checked>
+                                    <div class="level-filter__item">
+                                        <span class="level-filter__circle"></span>
+                                        Beginner <span class="check">✓</span>
+                                    </div>
+                                </div>
+                                <div class="level-filter level-filter--yellow filters__level">
+                                    <input type="checkbox" class="level-filter__input" checked>
+                                    <div class="level-filter__item">
+                                        <span class="level-filter__circle"></span>
+                                        Intermediate <span class="check">✓</span>
+                                    </div>
+                                </div>
+                                <div class="level-filter level-filter--red filters__level">
+                                    <input type="checkbox" class="level-filter__input" checked>
+                                    <div class="level-filter__item">
+                                        <span class="level-filter__circle"></span>
+                                        Advanced <span class="check">✓</span>
+                                    </div>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+            </div>
+
+            <div class="name name--grey news-list__name">Articles (383)</div>
+
+            <div class="news-grid">
+                <a href="#" class="articles-card">
+                    <div style="background-image: url('./images/hand.png')"
+                         class="articles-card__preview articles-card__preview--height">
+                        <div class="articles-card__tags">
+                            <div class="button articles-card__theme articles-card__theme--static">Quick start</div>
+                        </div>
+                    </div>
+                    <div class="articles-card__inner">
+                        <div class="articles-card__title">
+                            Description lorem ipsum dolor sit amet, consectetur
+                        </div>
+                        <div class="articles-card__text">
+                            Description lorem ipsum dolor sit amet, consectetur adipisicing elit, sed do eiusmod tempor
+                            incididunt
+                        </div>
+                        <div class="articles-card__bottom">
+                            <div class="author">
+                                <img src="./images/avatar3.png" alt="avatar" class="author__img author__img--sm">
+                                <div class="author__name author__name--grey">By Name Secondname</div>
+                            </div>
+
+                            <div class="articles-card__row">
+                                <div class="articles-card__item">
+                                    <img src="./images/icons/calendar-grey.svg" alt="icon" class="articles-card__icon">
+                                    <div class="articles-card__text articles-card__text--sm">12.10.21</div>
+                                </div>
+                                <div class="articles-card__item">
+                                    <img src="./images/icons/clock.svg" alt="icon" class="articles-card__icon">
+                                    <div class="articles-card__text articles-card__text--sm">4m</div>
+                                </div>
+                            </div>
+                        </div>
+                        <div class="more-link articles-card__more-link">
+                            Learn more
+                            <img src="./images/icons/arrow.svg" alt="arrow" class="more-link__arrow">
+                        </div>
+                    </div>
+                </a>
+                <a href="#" class="articles-card">
+                    <div style="background-image: url('./images/img1.png')"
+                         class="articles-card__preview articles-card__preview--height">
+                        <div class="articles-card__tags">
+                            <div class="button articles-card__theme articles-card__theme--static">Launches</div>
+                        </div>
+                    </div>
+                    <div class="articles-card__inner">
+                        <div class="articles-card__title">
+                            Description lorem ipsum dolor sit amet, consectetur
+                        </div>
+                        <div class="articles-card__text">
+                            Description lorem ipsum dolor sit amet, consectetur adipisicing elit, sed do eiusmod tempor
+                            incididunt
+                        </div>
+                        <div class="articles-card__bottom">
+                            <div class="author">
+                                <img src="./images/avatar3.png" alt="avatar" class="author__img author__img--sm">
+                                <div class="author__name author__name--grey">By Name Secondname</div>
+                            </div>
+
+                            <div class="articles-card__row">
+                                <div class="articles-card__item">
+                                    <img src="./images/icons/calendar-grey.svg" alt="icon" class="articles-card__icon">
+                                    <div class="articles-card__text articles-card__text--sm">12.10.21</div>
+                                </div>
+                                <div class="articles-card__item">
+                                    <img src="./images/icons/clock.svg" alt="icon" class="articles-card__icon">
+                                    <div class="articles-card__text articles-card__text--sm">4m</div>
+                                </div>
+                            </div>
+                        </div>
+                        <div class="more-link articles-card__more-link">
+                            Learn more
+                            <img src="./images/icons/arrow.svg" alt="arrow" class="more-link__arrow">
+                        </div>
+                    </div>
+                </a>
+                <a href="#" class="articles-card">
+                    <div style="background-image: url('./images/article6.png')"
+                         class="articles-card__preview articles-card__preview--height">
+                        <div class="articles-card__tags">
+                            <div class="button articles-card__theme articles-card__theme--static">Tech intro</div>
+                        </div>
+                    </div>
+                    <div class="articles-card__inner">
+                        <div class="articles-card__title">
+                            Description lorem ipsum dolor sit amet, consectetur
+                        </div>
+                        <div class="articles-card__text">
+                            Description lorem ipsum dolor sit amet, consectetur adipisicing elit, sed do eiusmod tempor
+                            incididunt
+                        </div>
+                        <div class="articles-card__bottom">
+                            <div class="author">
+                                <img src="./images/avatar3.png" alt="avatar" class="author__img author__img--sm">
+                                <div class="author__name author__name--grey">By Name Secondname</div>
+                            </div>
+
+                            <div class="articles-card__row">
+                                <div class="articles-card__item">
+                                    <img src="./images/icons/calendar-grey.svg" alt="icon" class="articles-card__icon">
+                                    <div class="articles-card__text articles-card__text--sm">12.10.21</div>
+                                </div>
+                                <div class="articles-card__item">
+                                    <img src="./images/icons/clock.svg" alt="icon" class="articles-card__icon">
+                                    <div class="articles-card__text articles-card__text--sm">4m</div>
+                                </div>
+                            </div>
+                        </div>
+                        <div class="more-link articles-card__more-link">
+                            Learn more
+                            <img src="./images/icons/arrow.svg" alt="arrow" class="more-link__arrow">
+                        </div>
+                    </div>
+                </a>
+                <a href="#" class="articles-card">
+                    <div style="background-image: url('./images/img2.png')"
+                         class="articles-card__preview articles-card__preview--height">
+                        <div class="articles-card__tags">
+                            <div class="button articles-card__theme articles-card__theme--static">Quick start</div>
+                        </div>
+                    </div>
+                    <div class="articles-card__inner">
+                        <div class="articles-card__title">
+                            Description lorem ipsum dolor sit amet, consectetur
+                        </div>
+                        <div class="articles-card__text">
+                            Description lorem ipsum dolor sit amet, consectetur adipisicing elit, sed do eiusmod tempor
+                            incididunt
+                        </div>
+                        <div class="articles-card__bottom">
+                            <div class="author">
+                                <img src="./images/avatar3.png" alt="avatar" class="author__img author__img--sm">
+                                <div class="author__name author__name--grey">By Name Secondname</div>
+                            </div>
+
+                            <div class="articles-card__row">
+                                <div class="articles-card__item">
+                                    <img src="./images/icons/calendar-grey.svg" alt="icon" class="articles-card__icon">
+                                    <div class="articles-card__text articles-card__text--sm">12.10.21</div>
+                                </div>
+                                <div class="articles-card__item">
+                                    <img src="./images/icons/clock.svg" alt="icon" class="articles-card__icon">
+                                    <div class="articles-card__text articles-card__text--sm">4m</div>
+                                </div>
+                            </div>
+                        </div>
+                        <div class="more-link articles-card__more-link">
+                            Learn more
+                            <img src="./images/icons/arrow.svg" alt="arrow" class="more-link__arrow">
+                        </div>
+                    </div>
+                </a>
+                <a href="#" class="articles-card">
+                    <div style="background-image: url('./images/img3.png')"
+                         class="articles-card__preview articles-card__preview--height">
+                        <div class="articles-card__tags">
+                            <div class="button articles-card__theme articles-card__theme--static">Launches</div>
+                        </div>
+                    </div>
+                    <div class="articles-card__inner">
+                        <div class="articles-card__title">
+                            Description lorem ipsum dolor sit amet, consectetur
+                        </div>
+                        <div class="articles-card__text">
+                            Description lorem ipsum dolor sit amet, consectetur adipisicing elit, sed do eiusmod tempor
+                            incididunt
+                        </div>
+                        <div class="articles-card__bottom">
+                            <div class="author">
+                                <img src="./images/avatar3.png" alt="avatar" class="author__img author__img--sm">
+                                <div class="author__name author__name--grey">By Name Secondname</div>
+                            </div>
+
+                            <div class="articles-card__row">
+                                <div class="articles-card__item">
+                                    <img src="./images/icons/calendar-grey.svg" alt="icon" class="articles-card__icon">
+                                    <div class="articles-card__text articles-card__text--sm">12.10.21</div>
+                                </div>
+                                <div class="articles-card__item">
+                                    <img src="./images/icons/clock.svg" alt="icon" class="articles-card__icon">
+                                    <div class="articles-card__text articles-card__text--sm">4m</div>
+                                </div>
+                            </div>
+                        </div>
+                        <div class="more-link articles-card__more-link">
+                            Learn more
+                            <img src="./images/icons/arrow.svg" alt="arrow" class="more-link__arrow">
+                        </div>
+                    </div>
+                </a>
+                <a href="#" class="articles-card">
+                    <div style="background-image: url('./images/img4.png')"
+                         class="articles-card__preview articles-card__preview--height">
+                        <div class="articles-card__tags">
+                            <div class="button articles-card__theme articles-card__theme--static">Tech intro</div>
+                        </div>
+                    </div>
+                    <div class="articles-card__inner">
+                        <div class="articles-card__title">
+                            Description lorem ipsum dolor sit amet, consectetur
+                        </div>
+                        <div class="articles-card__text">
+                            Description lorem ipsum dolor sit amet, consectetur adipisicing elit, sed do eiusmod tempor
+                            incididunt
+                        </div>
+                        <div class="articles-card__bottom">
+                            <div class="author">
+                                <img src="./images/avatar3.png" alt="avatar" class="author__img author__img--sm">
+                                <div class="author__name author__name--grey">By Name Secondname</div>
+                            </div>
+
+                            <div class="articles-card__row">
+                                <div class="articles-card__item">
+                                    <img src="./images/icons/calendar-grey.svg" alt="icon" class="articles-card__icon">
+                                    <div class="articles-card__text articles-card__text--sm">12.10.21</div>
+                                </div>
+                                <div class="articles-card__item">
+                                    <img src="./images/icons/clock.svg" alt="icon" class="articles-card__icon">
+                                    <div class="articles-card__text articles-card__text--sm">4m</div>
+                                </div>
+                            </div>
+                        </div>
+                        <div class="more-link articles-card__more-link">
+                            Learn more
+                            <img src="./images/icons/arrow.svg" alt="arrow" class="more-link__arrow">
+                        </div>
+                    </div>
+                </a>
+                <a href="#" class="articles-card">
+                    <div style="background-image: url('./images/img5.png')"
+                         class="articles-card__preview articles-card__preview--height">
+                        <div class="articles-card__tags">
+                            <div class="button articles-card__theme articles-card__theme--static">Quick start</div>
+                        </div>
+                    </div>
+                    <div class="articles-card__inner">
+                        <div class="articles-card__title">
+                            Description lorem ipsum dolor sit amet, consectetur
+                        </div>
+                        <div class="articles-card__text">
+                            Description lorem ipsum dolor sit amet, consectetur adipisicing elit, sed do eiusmod tempor
+                            incididunt
+                        </div>
+                        <div class="articles-card__bottom">
+                            <div class="author">
+                                <img src="./images/avatar3.png" alt="avatar" class="author__img author__img--sm">
+                                <div class="author__name author__name--grey">By Name Secondname</div>
+                            </div>
+
+                            <div class="articles-card__row">
+                                <div class="articles-card__item">
+                                    <img src="./images/icons/calendar-grey.svg" alt="icon" class="articles-card__icon">
+                                    <div class="articles-card__text articles-card__text--sm">12.10.21</div>
+                                </div>
+                                <div class="articles-card__item">
+                                    <img src="./images/icons/clock.svg" alt="icon" class="articles-card__icon">
+                                    <div class="articles-card__text articles-card__text--sm">4m</div>
+                                </div>
+                            </div>
+                        </div>
+                        <div class="more-link articles-card__more-link">
+                            Learn more
+                            <img src="./images/icons/arrow.svg" alt="arrow" class="more-link__arrow">
+                        </div>
+                    </div>
+                </a>
+                <a href="#" class="articles-card">
+                    <div style="background-image: url('./images/img6.png')"
+                         class="articles-card__preview articles-card__preview--height">
+                        <div class="articles-card__tags">
+                            <div class="button articles-card__theme articles-card__theme--static">Launches</div>
+                        </div>
+                    </div>
+                    <div class="articles-card__inner">
+                        <div class="articles-card__title">
+                            Description lorem ipsum dolor sit amet, consectetur
+                        </div>
+                        <div class="articles-card__text">
+                            Description lorem ipsum dolor sit amet, consectetur adipisicing elit, sed do eiusmod tempor
+                            incididunt
+                        </div>
+                        <div class="articles-card__bottom">
+                            <div class="author">
+                                <img src="./images/avatar3.png" alt="avatar" class="author__img author__img--sm">
+                                <div class="author__name author__name--grey">By Name Secondname</div>
+                            </div>
+
+                            <div class="articles-card__row">
+                                <div class="articles-card__item">
+                                    <img src="./images/icons/calendar-grey.svg" alt="icon" class="articles-card__icon">
+                                    <div class="articles-card__text articles-card__text--sm">12.10.21</div>
+                                </div>
+                                <div class="articles-card__item">
+                                    <img src="./images/icons/clock.svg" alt="icon" class="articles-card__icon">
+                                    <div class="articles-card__text articles-card__text--sm">4m</div>
+                                </div>
+                            </div>
+                        </div>
+                        <div class="more-link articles-card__more-link">
+                            Learn more
+                            <img src="./images/icons/arrow.svg" alt="arrow" class="more-link__arrow">
+                        </div>
+                    </div>
+                </a>
+                <a href="#" class="articles-card">
+                    <div style="background-image: url('./images/img7.png')"
+                         class="articles-card__preview articles-card__preview--height">
+                        <div class="articles-card__tags">
+                            <div class="button articles-card__theme articles-card__theme--static">Tech intro</div>
+                        </div>
+                    </div>
+                    <div class="articles-card__inner">
+                        <div class="articles-card__title">
+                            Description lorem ipsum dolor sit amet, consectetur
+                        </div>
+                        <div class="articles-card__text">
+                            Description lorem ipsum dolor sit amet, consectetur adipisicing elit, sed do eiusmod tempor
+                            incididunt
+                        </div>
+                        <div class="articles-card__bottom">
+                            <div class="author">
+                                <img src="./images/avatar3.png" alt="avatar" class="author__img author__img--sm">
+                                <div class="author__name author__name--grey">By Name Secondname</div>
+                            </div>
+
+                            <div class="articles-card__row">
+                                <div class="articles-card__item">
+                                    <img src="./images/icons/calendar-grey.svg" alt="icon" class="articles-card__icon">
+                                    <div class="articles-card__text articles-card__text--sm">12.10.21</div>
+                                </div>
+                                <div class="articles-card__item">
+                                    <img src="./images/icons/clock.svg" alt="icon" class="articles-card__icon">
+                                    <div class="articles-card__text articles-card__text--sm">4m</div>
+                                </div>
+                            </div>
+                        </div>
+                        <div class="more-link articles-card__more-link">
+                            Learn more
+                            <img src="./images/icons/arrow.svg" alt="arrow" class="more-link__arrow">
+                        </div>
+                    </div>
+                </a>
+                <a href="#" class="articles-card">
+                    <div style="background-image: url('./images/img8.png')"
+                         class="articles-card__preview articles-card__preview--height">
+                        <div class="articles-card__tags">
+                            <div class="button articles-card__theme articles-card__theme--static">Quick start</div>
+                        </div>
+                    </div>
+                    <div class="articles-card__inner">
+                        <div class="articles-card__title">
+                            Description lorem ipsum dolor sit amet, consectetur
+                        </div>
+                        <div class="articles-card__text">
+                            Description lorem ipsum dolor sit amet, consectetur adipisicing elit, sed do eiusmod tempor
+                            incididunt
+                        </div>
+                        <div class="articles-card__bottom">
+                            <div class="author">
+                                <img src="./images/avatar3.png" alt="avatar" class="author__img author__img--sm">
+                                <div class="author__name author__name--grey">By Name Secondname</div>
+                            </div>
+
+                            <div class="articles-card__row">
+                                <div class="articles-card__item">
+                                    <img src="./images/icons/calendar-grey.svg" alt="icon" class="articles-card__icon">
+                                    <div class="articles-card__text articles-card__text--sm">12.10.21</div>
+                                </div>
+                                <div class="articles-card__item">
+                                    <img src="./images/icons/clock.svg" alt="icon" class="articles-card__icon">
+                                    <div class="articles-card__text articles-card__text--sm">4m</div>
+                                </div>
+                            </div>
+                        </div>
+                        <div class="more-link articles-card__more-link">
+                            Learn more
+                            <img src="./images/icons/arrow.svg" alt="arrow" class="more-link__arrow">
+                        </div>
+                    </div>
+                </a>
+                <a href="#" class="articles-card">
+                    <div style="background-image: url('./images/img9.png')"
+                         class="articles-card__preview articles-card__preview--height">
+                        <div class="articles-card__tags">
+                            <div class="button articles-card__theme articles-card__theme--static">Launches</div>
+                        </div>
+                    </div>
+                    <div class="articles-card__inner">
+                        <div class="articles-card__title">
+                            Description lorem ipsum dolor sit amet, consectetur
+                        </div>
+                        <div class="articles-card__text">
+                            Description lorem ipsum dolor sit amet, consectetur adipisicing elit, sed do eiusmod tempor
+                            incididunt
+                        </div>
+                        <div class="articles-card__bottom">
+                            <div class="author">
+                                <img src="./images/avatar3.png" alt="avatar" class="author__img author__img--sm">
+                                <div class="author__name author__name--grey">By Name Secondname</div>
+                            </div>
+
+                            <div class="articles-card__row">
+                                <div class="articles-card__item">
+                                    <img src="./images/icons/calendar-grey.svg" alt="icon" class="articles-card__icon">
+                                    <div class="articles-card__text articles-card__text--sm">12.10.21</div>
+                                </div>
+                                <div class="articles-card__item">
+                                    <img src="./images/icons/clock.svg" alt="icon" class="articles-card__icon">
+                                    <div class="articles-card__text articles-card__text--sm">4m</div>
+                                </div>
+                            </div>
+                        </div>
+                        <div class="more-link articles-card__more-link">
+                            Learn more
+                            <img src="./images/icons/arrow.svg" alt="arrow" class="more-link__arrow">
+                        </div>
+                    </div>
+                </a>
+                <a href="#" class="articles-card">
+                    <div style="background-image: url('./images/img10.png')"
+                         class="articles-card__preview articles-card__preview--height">
+                        <div class="articles-card__tags">
+                            <div class="button articles-card__theme articles-card__theme--static">Tech intro</div>
+                        </div>
+                    </div>
+                    <div class="articles-card__inner">
+                        <div class="articles-card__title">
+                            Description lorem ipsum dolor sit amet, consectetur
+                        </div>
+                        <div class="articles-card__text">
+                            Description lorem ipsum dolor sit amet, consectetur adipisicing elit, sed do eiusmod tempor
+                            incididunt
+                        </div>
+                        <div class="articles-card__bottom">
+                            <div class="author">
+                                <img src="./images/avatar3.png" alt="avatar" class="author__img author__img--sm">
+                                <div class="author__name author__name--grey">By Name Secondname</div>
+                            </div>
+
+                            <div class="articles-card__row">
+                                <div class="articles-card__item">
+                                    <img src="./images/icons/calendar-grey.svg" alt="icon" class="articles-card__icon">
+                                    <div class="articles-card__text articles-card__text--sm">12.10.21</div>
+                                </div>
+                                <div class="articles-card__item">
+                                    <img src="./images/icons/clock.svg" alt="icon" class="articles-card__icon">
+                                    <div class="articles-card__text articles-card__text--sm">4m</div>
+                                </div>
+                            </div>
+                        </div>
+                        <div class="more-link articles-card__more-link">
+                            Learn more
+                            <img src="./images/icons/arrow.svg" alt="arrow" class="more-link__arrow">
+                        </div>
+                    </div>
+                </a>
+            </div>
+            <a href="#" class="button button--black news-list__button ">Show more</a>
+        </div>
+    </div>
+</div>
+
+<footer class="footer">
+    <div class="container ">
+        <div class="footer__top">
+            <div class="logo footer__logo"></div>
+            <div class="footer__nav">
+                <a href="#" class="footer__link">Dashboard</a>
+                <a href="#" class="footer__link">Blog</a>
+                <a href="#" class="footer__link">News</a>
+                <!--                <a href="#" class="footer__link">NFT (Future)</a>-->
+            </div>
+            <form class="footer__form">
+                <div class="footer__label">Follow the latest news</div>
+                <div class="footer__row">
+                    <input type="text" class="footer__input" placeholder="Enter your e-mail">
+                    <button class="footer__button">Send</button>
+                </div>
+            </form>
+        </div>
+        <div class="footer__bottom">
+            <a href="#" class="footer__social">
+                <img src="./images/icons/facebook.svg" alt="icon" class="footer__icon">
+            </a>
+            <a href="#" class="footer__social">
+                <img src="./images/icons/twitter.svg" alt="icon" class="footer__icon">
+            </a>
+            <a href="#" class="footer__social">
+                <img src="./images/icons/telegram.svg" alt="icon" class="footer__icon">
+            </a>
+            <a href="#" class="footer__social">
+                <img src="./images/icons/inst.svg" alt="icon" class="footer__icon">
+            </a>
+            <a href="#" class="footer__social">
+                <img src="./images/icons/youtube.svg" alt="icon" class="footer__icon">
+            </a>
+        </div>
+    </div>
+</footer>
+
+<script src="https://cdnjs.cloudflare.com/ajax/libs/jquery/3.6.0/jquery.min.js"></script>
+<script src="https://cdn.jsdelivr.net/npm/select2@4.1.0-rc.0/dist/js/select2.min.js"></script>
+<script src="https://cdn.jsdelivr.net/npm/apexcharts"></script>
+<script src="https://cdnjs.cloudflare.com/ajax/libs/ion-rangeslider/2.3.1/js/ion.rangeSlider.min.js"></script>
+<script src="https://cdn.rawgit.com/fnando/sparkline/master/dist/sparkline.js
+"></script>
+<script type="text/javascript" src="https://canvasjs.com/assets/script/canvasjs.stock.min.js"></script>
+<script src="./scripts/main.js"></script>
+<script src="./scripts/graph.js"></script>
+</body>
+</html>

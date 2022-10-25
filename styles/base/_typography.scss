@@ -1,0 +1,222 @@
+
+@font-face {
+  font-family: "Roboto";
+  src: url('../../assets/fonts/roboto/Roboto-Regular.eot');
+  src: local('Roboto'), local('Roboto-Regular'),
+  url('../../assets/fonts/roboto/Roboto-Regular.eot?#iefix') format('embedded-opentype'),
+  url('../../assets/fonts/roboto/Roboto-Regular.woff') format('woff'),
+  url('../../assets/fonts/roboto/Roboto-Regular.ttf') format('truetype');
+  font-weight: 400;
+  font-style: normal;
+}
+
+@font-face {
+  font-family: "Roboto";
+  src: url('../../assets/fonts/roboto/Roboto-Medium.eot');
+  src: local('Roboto'), local('Roboto-Medium'),
+  url('../../assets/fonts/roboto/Roboto-Medium.eot?#iefix') format('embedded-opentype'),
+  url('../../assets/fonts/roboto/Roboto-Medium.woff') format('woff'),
+  url('../../assets/fonts/roboto/Roboto-Medium.ttf') format('truetype');
+  font-weight: 500;
+  font-style: normal;
+}
+
+@font-face {
+  font-family: "Roboto";
+  src: url('../../assets/fonts/roboto/Roboto-Bold.eot');
+  src: local('Roboto'), local('Roboto-Bold'),
+  url('../../assets/fonts/roboto/Roboto-Bold.eot?#iefix') format('embedded-opentype'),
+  url('../../assets/fonts/roboto/Roboto-Bold.woff') format('woff'),
+  url('../../assets/fonts/roboto/Roboto-Bold.ttf') format('truetype');
+  font-weight: 700;
+  font-style: normal;
+}
+
+@font-face {
+  font-family: "Prompt";
+  src: url('../../assets/fonts/prompt/Prompt-Light.eot');
+  src: local('Prompt'), local('Prompt-Light'),
+  url('../../assets/fonts/prompt/Prompt-Light.eot?#iefix') format('embedded-opentype'),
+  url('../../assets/fonts/prompt/Prompt-Light.woff') format('woff'),
+  url('../../assets/fonts/prompt/Prompt-Light.ttf') format('truetype');
+  font-weight: 300;
+  font-style: normal;
+}
+
+@font-face {
+  font-family: "Prompt";
+  src: url('../../assets/fonts/prompt/Prompt-Regular.eot');
+  src: local('Prompt'), local('Prompt-Regular'),
+  url('../../assets/fonts/prompt/Prompt-Regular.eot?#iefix') format('embedded-opentype'),
+  url('../../assets/fonts/prompt/Prompt-Regular.woff') format('woff'),
+  url('../../assets/fonts/prompt/Prompt-Regular.ttf') format('truetype');
+  font-weight: 400;
+  font-style: normal;
+}
+
+@font-face {
+  font-family: "Prompt";
+  src: url('../../assets/fonts/prompt/Prompt-Medium.eot');
+  src: local('Prompt'), local('Prompt-Medium'),
+  url('../../assets/fonts/prompt/Prompt-Medium.eot?#iefix') format('embedded-opentype'),
+  url('../../assets/fonts/prompt/Prompt-Medium.woff') format('woff'),
+  url('../../assets/fonts/prompt/Prompt-Medium.ttf') format('truetype');
+  font-weight: 500;
+  font-style: normal;
+}
+
+@font-face {
+  font-family: "Prompt";
+  src: url('../../assets/fonts/prompt/Prompt-Bold.eot');
+  src: local('Prompt'), local('Prompt-Bold'),
+  url('../../assets/fonts/prompt/Prompt-Bold.eot?#iefix') format('embedded-opentype'),
+  url('../../assets/fonts/prompt/Prompt-Bold.woff') format('woff'),
+  url('../../assets/fonts/prompt/Prompt-Bold.ttf') format('truetype');
+  font-weight: 700;
+  font-style: normal;
+}
+
+@font-face {
+  font-family: "Axiforma";
+  src: url('../../assets/fonts/axiforma/Axiforma-Light.eot');
+  src: local('Axiforma'), local('Axiforma-Light'),
+  url('../../assets/fonts/axiforma/Axiforma-Light.eot?#iefix') format('embedded-opentype'),
+  url('../../assets/fonts/axiforma/Axiforma-Light.woff') format('woff'),
+  url('../../assets/fonts/axiforma/Axiforma-Light.ttf') format('truetype');
+  font-weight: 300;
+  font-style: normal;
+}
+
+@font-face {
+  font-family: "Axiforma";
+  src: url('../../assets/fonts/axiforma/Axiforma-Regular.eot');
+  src: local('Axiforma'), local('Axiforma-Regular'),
+  url('../../assets/fonts/axiforma/Axiforma-Regular.eot?#iefix') format('embedded-opentype'),
+  url('../../assets/fonts/axiforma/Axiforma-Regular.woff') format('woff'),
+  url('../../assets/fonts/axiforma/Axiforma-Regular.ttf') format('truetype');
+  font-weight: 400;
+  font-style: normal;
+}
+
+@font-face {
+  font-family: "Axiforma";
+  src: url('../../assets/fonts/axiforma/Axiforma-SemiBold.eot');
+  src: local('Axiforma'), local('Axiforma-SemiBold'),
+  url('../../assets/fonts/axiforma/Axiforma-SemiBold.eot?#iefix') format('embedded-opentype'),
+  url('../../assets/fonts/axiforma/Axiforma-SemiBold.woff') format('woff'),
+  url('../../assets/fonts/axiforma/Axiforma-SemiBold.ttf') format('truetype');
+  font-weight: 600;
+  font-style: normal;
+}
+
+@font-face {
+  font-family: "Axiforma";
+  src: url('../../assets/fonts/axiforma/Axiforma-Bold.eot');
+  src: local('Axiforma'), local('Axiforma-Bold'),
+  url('../../assets/fonts/axiforma/Axiforma-Bold.eot?#iefix') format('embedded-opentype'),
+  url('../../assets/fonts/axiforma/Axiforma-Bold.woff') format('woff'),
+  url('../../assets/fonts/axiforma/Axiforma-Bold.ttf') format('truetype');
+  font-weight: 700;
+  font-style: normal;
+}
+
+@font-face {
+  font-family: "Axiforma";
+  src: url('../../assets/fonts/axiforma/Axiforma-Black.eot');
+  src: local('Axiforma'), local('Axiforma-Black'),
+  url('../../assets/fonts/axiforma/Axiforma-Black.eot?#iefix') format('embedded-opentype'),
+  url('../../assets/fonts/axiforma/Axiforma-Black.woff') format('woff'),
+  url('../../assets/fonts/axiforma/Axiforma-Black.ttf') format('truetype');
+  font-weight: 900;
+  font-style: normal;
+}
+
+@font-face {
+  font-family: "Inter";
+  src: url('../../assets/fonts/inter/Inter-Regular.eot');
+  src: local('Inter'), local('Inter-Regular'),
+  url('../../assets/fonts/inter/Inter-Regular.eot?#iefix') format('embedded-opentype'),
+  url('../../assets/fonts/inter/Inter-Regular.woff') format('woff'),
+  url('../../assets/fonts/inter/Inter-Regular.ttf') format('truetype');
+  font-weight: 400;
+  font-style: normal;
+}
+@font-face {
+  font-family: "Inter";
+  src: url('../../assets/fonts/inter/Inter-Medium.eot');
+  src: local('Inter'), local('Inter-Medium'),
+  url('../../assets/fonts/inter/Inter-Medium.eot?#iefix') format('embedded-opentype'),
+  url('../../assets/fonts/inter/Inter-Medium.woff') format('woff'),
+  url('../../assets/fonts/inter/Inter-Medium.ttf') format('truetype');
+  font-weight: 500;
+  font-style: normal;
+}
+@font-face {
+  font-family: "Inter";
+  src: url('../../assets/fonts/inter/Inter-SemiBold.eot');
+  src: local('Inter'), local('Inter-SemiBold'),
+  url('../../assets/fonts/inter/Inter-SemiBold.eot?#iefix') format('embedded-opentype'),
+  url('../../assets/fonts/inter/Inter-SemiBold.woff') format('woff'),
+  url('../../assets/fonts/inter/Inter-SemiBold.ttf') format('truetype');
+  font-weight: 600;
+  font-style: normal;
+}
+@font-face {
+  font-family: "Inter";
+  src: url('../../assets/fonts/inter/Inter-Bold.eot');
+  src: local('Inter'), local('Inter-Bold'),
+  url('../../assets/fonts/inter/Inter-Bold.eot?#iefix') format('embedded-opentype'),
+  url('../../assets/fonts/inter/Inter-Bold.woff') format('woff'),
+  url('../../assets/fonts/inter/Inter-Bold.ttf') format('truetype');
+  font-weight: 700;
+  font-style: normal;
+}
+
+.label {
+  font-weight: 500;
+  font-size: rem(18px);
+  line-height: 150%;
+  text-transform: uppercase;
+  color: $cyan;
+  &--grey {
+    font-size: rem(19px);
+    color: rgba($white, 0.3)
+  }
+  @media (max-width: 576px) {
+    font-size: rem(13px);
+  }
+}
+
+.title {
+  font-weight: 700;
+  font-size: rem(40px);
+  line-height: 135%;
+  color: $white;
+  @media (max-width: 768px) {
+    font-size: rem(28px);
+  }
+  @media (max-width: 576px) {
+    font-size: rem(25px);
+  }
+  &--sm {
+    font-weight: 700;
+    font-size: rem(18px);
+    line-height: rem(21px);
+    color: $white;
+    font-family: "Roboto", sans-serif;
+  }
+  &--md {
+    font-weight: 700;
+    font-size: rem(24px);
+    line-height: 1.42;
+    color: $white;
+    font-family: "Inter", sans-serif;
+  }
+}
+
+.text {
+  font-size: rem(15px);
+  line-height: 169%;
+  color: rgba($white, 0.54);
+  font-family: "Roboto", sans-serif;
+}

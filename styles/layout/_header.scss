@@ -1,0 +1,131 @@
+.header {
+  //background: #FFFFFF;
+  padding: rem(18px) 0 rem(12px) 0;
+  height: rem(98px);
+  position: sticky;
+  left: 0;
+  top: 0;
+  right: 0;
+  z-index: 10;
+  flex: 0 0 auto;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  background: #121020;
+  box-shadow: 0px -46px 100px rgba(0, 0, 0, 0.14);
+
+  &.scroll {
+    @media (max-width: 992px) {
+      .header__box {
+        display: none;
+      }
+      .header__menu-btn {
+        display: flex;
+      }
+    }
+  }
+
+  @media (max-width: 768px) {
+    height: rem(68px);
+    padding: rem(14px) 0 rem(10px) 0;
+  }
+  @media (max-width: 576px) {
+    height: rem(54px);
+    padding: rem(11px) 0 rem(8px) 0;
+  }
+
+  &__inner {
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+  }
+
+  &__box {
+    display: flex;
+    align-items: center;
+    padding-left: rem(68px);
+    height: 100%;
+    @media (max-width: 992px) {
+      padding-left: 0;
+      border-left: 0;
+    }
+  }
+
+  &__wrapper {
+    display: flex;
+    align-items: center;
+    height: calc(100% + 30px);
+    margin: rem(-18px) 0 rem(-12px) 0;
+    @media (max-width: 768px) {
+      margin: rem(-14px) 0 rem(-10px) 0;
+    }
+    @media (max-width: 576px) {
+      margin: rem(-11px) 0 rem(-8px) 0;
+      height: calc(100% + 24px);
+    }
+  }
+
+  &__lang-select {
+    margin-right: rem(20px);
+    flex-shrink: 0;
+    @media (max-width: 576px) {
+      margin-right: rem(15px);
+    }
+  }
+
+  &__user {
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    @media (max-width: 576px) {
+      img {
+        width: rem(28px);
+        height: rem(28px);
+      }
+    }
+  }
+
+  &__menu-btn {
+    display: none;
+    align-items: center;
+    justify-content: center;
+    -webkit-tap-highlight-color: transparent;
+    @media (max-width: 992px) {
+      display: block;
+    }
+  }
+
+  &__menu-icon {
+    width: rem(24px);
+    filter: brightness(0) invert(1);
+    @media (max-width: 576px) {
+      width: rem(21px);
+    }
+
+    &.menu {
+      &.hidden {
+        display: none;
+      }
+    }
+
+    &.close {
+      display: none;
+      @media (max-width: 768px) {
+        width: rem(19px);
+      }
+      @media (max-width: 576px) {
+        width: rem(17px);
+      }
+
+      &.show {
+        display: block;
+      }
+    }
+  }
+
+  &__nav {
+    @media (max-width: 992px) {
+      display: none !important;
+    }
+  }
+}

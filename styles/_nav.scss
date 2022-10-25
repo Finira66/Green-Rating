@@ -1,0 +1,24 @@
+.nav {
+  display: flex;
+  align-items: center;
+  height: 100%;
+  &__link {
+    font-size: rem(16px);
+    line-height: rem(24px);
+    color: #FFF;
+    text-transform: uppercase;
+    margin-right: rem(69px);
+    position: relative;
+    height: 100%;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+
+    &:last-child {
+      margin-right: 0;
+    }
+    @media (max-width: 1200px) {
+      margin-right: rem(50px);
+    }
+  }
+}

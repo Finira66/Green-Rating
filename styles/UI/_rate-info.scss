@@ -1,0 +1,39 @@
+.rate-info {
+  padding: rem(3px) rem(6px);
+  background: #EA3943;
+  border-radius: 15px;
+  display: flex;
+  align-items: center;
+  font-family: "Roboto", sans-serif;
+  &__text {
+    font-weight: 400;
+    font-size: rem(12px);
+    line-height: rem(14px);
+    color: #fff;
+    span {
+      font-weight: 600;
+    }
+  }
+  &__icon {
+    margin-right: rem(3px);
+  }
+  &--md {
+    border-radius: rem(8px);
+    padding: rem(7px) rem(8px);
+    .rate-info__text {
+      font-size: rem(14px);
+    }
+  }
+  &--flat {
+    padding: 0;
+    border-radius: 0;
+    background: transparent;
+    .rate-info__text {
+      color: #EA3943;
+    }
+  }
+  &__arrow {
+    fill: red;
+    margin-right: rem(2px);
+  }
+}
